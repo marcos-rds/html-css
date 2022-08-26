@@ -12,6 +12,7 @@
 }
 body {
     background-color: lightsteelblue;
+    min-height: 100vh; /* significa que a altura do site vai ter 100% da view-height (também poderia colocar só 100%)*/
 }
 main {
     max-width: 500px;
@@ -21,48 +22,46 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 150px;
 
 }
 header h1 {
-    padding: 30px 0px 10px 0px;
+    padding: 50px 0px 10px 0px;
     font-family: var(--fonte1);
     font-size: 3em;
     font-weight: lighter;
+    font-variant: small-caps; /* Todas as letras ficam maiúsculas, mas as primeiras ficam maiores */
 }
 
 header p {
     font: 1em normal Arial, Helvetica, sans-serif;
-}
-
-header a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+    padding-bottom: 50px;
 }
 
 article {
     background-color: white;
     border: 1px solid black;
 }
-article p {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    line-height: 2em;
+}
+section p {
     font-family: var(--fonte2);
     font-weight: normal;
     font-size: 18px;
-    padding: 20px;
-    
+        
 }
-div#estrofe2, #estrofe4{
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-div#estrofe2,#estrofe4 {
+
+section.imagem {
     background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
     max-width: 500px;
 }
-div#estrofe2 p,#estrofe4 p {
+
+section.imagem p {
     background-color: rgba(0, 0, 0, 0.253);
     max-width: max-content;
     color: white;
@@ -74,12 +73,12 @@ footer p {
     text-align: center;
     padding: 5px;
 }
-footer a {
+header a, footer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-footer a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
