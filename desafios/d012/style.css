@@ -19,6 +19,8 @@ body {
 }
 main {
     margin: auto;
+    max-width: 1000px;
+    
 }
 header {
     background-color: black;
@@ -52,20 +54,36 @@ section {
     font-family: var(--fonte2);
     font-weight: normal;
 }
+section p {
+    padding-bottom: 2em;
+}
 
 section.imagem {
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.47);
+    background-attachment: fixed;
+        
+}
+section#img01 {
     background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
-    max-width: 500px;
+    
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.4);
     max-width: max-content;
     color: white;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
+
 footer p {
     font: 0.8em normal Arial, Helvetica, sans-serif;
     background-color: black;
