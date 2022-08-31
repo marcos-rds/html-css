@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,16 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="off"><!-- a tag <label> é para vincular o input à palavra do parágrafo (ajuda o mecanismo de busca, da semântica ao formulário) -->
-                                                                <!-- o method padrão é GET (aparece os dados na URL) o method POST (não aparece os dados na URL) -->
-        <p><label for="inome">Nome:</label><input type="text" name="nome " id="inome"></p> <!-- o ID foi escolhido "inome" apenas para diferenciar para fins didáticos, pois o name e id podem sim serem iguais -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- a tag <label> é para vincular o input à palavra do parágrafo (ajuda o mecanismo de busca, da semântica ao formulário) -->
+        <!-- o method padrão é GET (aparece os dados na URL) o method POST (não aparece os dados na URL) -->
+        <p><label for="inome">Nome:</label><input type="text" name="nome " id="inome"></p> <!-- o ID foi escolhido "inome" apenas para diferenciar para fins didáticos, pois o name e id podem serem iguais -->
         <p><label for="isobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Cadastrar"></p>
     </form>
 </body>
+
 </html>
